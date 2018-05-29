@@ -23,6 +23,10 @@ attr_writer :passengers
     @passengers.delete(passanger)
   end
 
+  def empty_bus()
+    @passengers = []
+  end
+
 
 
 end
