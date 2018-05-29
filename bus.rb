@@ -19,6 +19,10 @@ attr_writer :passengers
     @passengers << passanger
   end
 
+  def drop_off(passanger)
+    @passengers.delete(passanger)
+  end
+
 
 
 end
