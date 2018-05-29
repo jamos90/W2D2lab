@@ -1,6 +1,7 @@
 class Bus
 
 attr_reader :route, :passengers
+attr_writer :passengers
 
   def initialize(route, destination)
 
@@ -13,6 +14,11 @@ attr_reader :route, :passengers
   def number_of_passengers()
     return @passengers.count()
   end
+
+  def pick_up(passanger)
+    @passengers << passanger
+  end
+
 
 
 end
