@@ -11,6 +11,10 @@ class BusTest < MiniTest::Test
     @bus = Bus.new(22, "Ocean Terminal")
   end
 
+  def test_drive
+    assert_equal("Brum brum!", @bus.drive("Brum brum"))
+  end
+
   def test_bus_route
     assert_equal(22, @bus.route())
   end

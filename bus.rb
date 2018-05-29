@@ -11,6 +11,10 @@ attr_writer :passengers
 
   end
 
+  def drive(brum)
+    return "#{brum}!"
+  end
+
   def number_of_passengers()
     return @passengers.count()
   end
