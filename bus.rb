@@ -31,6 +31,13 @@ attr_writer :passengers
     @passengers = []
   end
 
+  def test_pick_up_from_stop(bus_stop)
+    for person in bus_stop.queue()
+      @passengers << person
+    end
+    bus_stop.empty_bus_stop()
+  end
+
 
 
 end
